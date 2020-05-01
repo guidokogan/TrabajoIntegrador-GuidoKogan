@@ -283,7 +283,10 @@ a {
       font-size: 80px;
       line-height: 75px;
       color: #e7466d;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      transition: 0.2s; }
+    .portfolio .portfolio__seamosCreativos h2:hover {
+      letter-spacing: 4px; }
     .portfolio .portfolio__seamosCreativos .portfolio__seamosCreativo__lineaOrganica {
       position: absolute;
       right: 0;

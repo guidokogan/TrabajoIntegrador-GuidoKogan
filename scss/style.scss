@@ -355,6 +355,10 @@ a {
             line-height: 75px;
             color: $color-magenta;
             text-transform: uppercase;
+            transition: 0.2s;
+        }
+        h2:hover {
+            letter-spacing: 4px;
         }
         .portfolio__seamosCreativo__lineaOrganica {
             position: absolute;
