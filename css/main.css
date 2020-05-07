@@ -307,6 +307,8 @@ a {
   .equipo h4 {
     color: #211828;
     margin: 20px 0; }
+  .equipo .equipo__mobile {
+    display: none; }
   .equipo .equipo__perfil {
     width: 100%;
     margin-bottom: 20px; }
@@ -526,4 +528,39 @@ a {
       margin-top: -100px;
       right: 0; }
   .contacto .contacto__formulario .form button {
-    width: 100%; } }
+    width: 100%; }
+  .equipo__desktop {
+    display: none; }
+  .equipo .equipo__mobile {
+    display: block !important; }
+  @supports (display: grid) {
+    .grid-container {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      grid-template-areas: "main main main"; }
+      @media screen and (max-width: 500px) {
+        .grid-container {
+          grid-template-areas: "main"; } }
+    .grid-item {
+      scrollbar-width: none;
+      color: #fff;
+      background: skyblue;
+      padding: 3.5em 1em;
+      font-size: 1em;
+      font-weight: 700; }
+    .main {
+      background-color: white;
+      grid-area: main;
+      padding: 0;
+      overflow-x: scroll;
+      overflow-y: hidden; }
+    .items {
+      position: relative;
+      width: 100%;
+      white-space: nowrap;
+      transition: all 0.2s;
+      transform: scale(0.98); }
+    .item {
+      display: inline-block;
+      background: skyblue;
+      margin: 2em 1em; } } }

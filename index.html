@@ -178,22 +178,37 @@
                 </h2>
             </div>
         </div>
-        <div class="row">
-            <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 equipo__perfil" alt="Patricio">
-                <img src="assets/equipo_pato.jpg" alt="">
+        <div class="row equipo__mobile">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="grid-container">
+                    <main class="grid-item main" id="main">
+                        <div class="items">
+                            <img src="assets/equipo_pato.jpg"  alt="Patricio">
+                            <img src="assets/equipo_santi.jpg" alt="Santiago">
+                            <img src="assets/equipo_zurdo.jpg" alt="Martin">
+                            <img src="assets/equipo_male.jpg" alt="Malena">
+                            <img src="assets/equipo_guido.jpg" alt="Guido">
+                        </div>
+                    </main>
+                </div>
             </div>
-            <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 equipo__perfil" alt="Santiago">
-                <img src="assets/equipo_santi.jpg" alt="">
-            </div>
-            <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 equipo__perfil" alt="Martin">
-                <img src="assets/equipo_zurdo.jpg" alt="">
-            </div>
-            <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 equipo__perfil" alt="Malena">
-                <img src="assets/equipo_male.jpg" alt="">
-            </div>
-            <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 equipo__perfil" alt="Guido">
-                <img src="assets/equipo_guido.jpg" alt="">
-            </div>
+        </div>
+        <div class="row equipo__desktop">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 equipo__perfil">
+                    <img src="assets/equipo_pato.jpg"  alt="Patricio">
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 equipo__perfil">
+                    <img src="assets/equipo_santi.jpg" alt="Santiago">
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 equipo__perfil">
+                    <img src="assets/equipo_zurdo.jpg" alt="Martin">
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 equipo__perfil">
+                    <img src="assets/equipo_male.jpg" alt="Malena">
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 equipo__perfil">
+                    <img src="assets/equipo_guido.jpg" alt="Guido">
+                </div>
         </div>
     </div>
 
@@ -253,9 +268,6 @@
         </div>
     </div>
 
-        
-        
-
     <!-- Elementos JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
     <script>
@@ -275,6 +287,16 @@
                 document.getElementById("navDesktop").style.backgroundColor = "transparent";
             }
         }
+    </script>
+    <script src="https://unpkg.com/scrollbooster@2/dist/scrollbooster.min.js"></script>
+    <script>
+        new ScrollBooster({
+        viewport: document.querySelector('.main'),
+        content: document.querySelector('.items'),
+        scrollMode: 'transform', // use CSS 'transform' property
+        direction: 'horizontal', // allow only horizontal scrolling
+        emulateScroll: true, // scroll on wheel events
+      });
     </script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
